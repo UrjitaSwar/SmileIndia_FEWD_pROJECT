@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+  /* THIS IS THE IMPORTANT PART */
+  .about-section {
+    padding: 100px;
+    text-align: center;
+    background: url(./image/maindemongo.png) ;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+  }
+
+  
+
+  /* -------------- */
+
+
+  #middlepart {
+    padding: 50px;
+    margin-left: 60px;
+  }
+  
+  .containermiddle {
+    border: 5px solid rgba(27, 185, 146, 0.575);
+    padding: 40px 80px 80px 40px;
+    max-width: 1300px;
+    height: 400px;
+  }
+    .containermiddle__image{
+      width: 350px;
+      margin: 30px 30px 30px 30px;
+      float: left;
+      border:2px solid #fff;
+      box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+      border-radius:7px;
+      
+    }
+    .containermiddle__text{
+      display: inline;
+    }
+
+    .containermiddle__text h2{
+      font-size: 22px;
+    }
+
+  
+  
+ /* ------------------------- */
+  #team{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      background: rgb(6, 58, 42);
+      min-height: 100vh;
+      position: relative;
+  }
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400px;
+  text-decoration: underline;
+  
+  padding-bottom: 30px;
+  
+}
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(253, 253, 253, 0.11);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+}
+
+.container .card:hover{
+  background: rgba(255, 255, 255, 0.568);
+}
+
+.container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+
+.container .card:hover .content{
+    opacity: 1;
+    transform: translateY(-20px);
+    color: black;
+}
+  
+
+.container .card .content .imgbx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(122, 248, 216, 0.74);
+}
+
+.container .card .content .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content .contentbx h3{
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 500;
+font-size: 18px;
+text-align: center;
+margin: 20px 0 10px;
+line-height: 1.1em;
+
+
+}
+
+.container .card .content .contentbx h3 span{
+    font-size: 12px;
+    font-family: 300;
+    text-transform: initial;
+    color: white;
+    
+}
+
+.container .card .content .contentbx {
+  text-decoration: black;
+}
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
